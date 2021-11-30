@@ -16,9 +16,9 @@ namespace Console_Z03
                     int n = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("|-------------------------------------------------");
 
-                    Console.WriteLine("| Бесполезный цикл для демонстрации");
                     if (n < 999)
                     {
+                        Console.WriteLine("| Бесполезный цикл для демонстрации");
                         for (int i = 0; i < n + 1; i++) // Бесполезная демонстрация
                         {
                             switch (i.ToString().Length)
@@ -37,8 +37,7 @@ namespace Console_Z03
                     }
                     else
                     {
-                        Console.WriteLine("|-------------------------------------------------");
-                        Console.WriteLine("| Приложение не созданно для форматирования цикла больше чем 999");
+                        Console.WriteLine("| Приложение не созданно для форматирования\n| цикла больше чем 999");
                     }
 
                     Console.WriteLine("|-------------------------------------------------");
