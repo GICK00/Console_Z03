@@ -16,28 +16,10 @@ namespace Console_Z03
                     int n = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("|-------------------------------------------------");
 
-                    if (n < 999)
+                    Console.WriteLine("| Бесполезный цикл для демонстрации");
+                    for (int i = 0; i < n + 1; i++) // Бесполезная демонстрация
                     {
-                        Console.WriteLine("| Бесполезный цикл для демонстрации");
-                        for (int i = 0; i < n + 1; i++) // Бесполезная демонстрация
-                        {
-                            switch (i.ToString().Length)
-                            {
-                                case 1:
-                                    Console.Write("| i = {0},   f(i) = {1}\n", i, f(i));
-                                    break;
-                                case 2:
-                                    Console.Write("| i = {0},  f(i) = {1}\n", i, f(i));
-                                    break;
-                                case 3:
-                                    Console.Write("| i = {0}, f(i) = {1}\n", i, f(i));
-                                    break;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("| Приложение не созданно для форматирования\n| цикла больше чем 999");
+                        Console.Write("| i = {0},   f(i) = {1}\n", String.Format("{0,4}", i), String.Format("{0,4}", f(i)));
                     }
 
                     Console.WriteLine("|-------------------------------------------------");
