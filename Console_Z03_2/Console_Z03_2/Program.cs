@@ -60,7 +60,7 @@ namespace Console_Z03_2
             if (x < 1) 
                 Console.WriteLine("| x = {0}, y = {1}", Math.Round(x, 3), Math.Round(y = ((x * x) - 1) * ((x * x) - 1), 3));
             else if (x > 1)
-                Console.WriteLine("| x = {0}, y = {1}", Math.Round(x, 3), Math.Round(y = 1 / (1 + (x * x)), 3)); 
+                Console.WriteLine("| x = {0}, y = {1}", Math.Round(x, 3), Math.Round(y = 1 / ((1 + x) * (1 + x)), 3)); 
             else if (x == 1)
                 Console.WriteLine("| x = {0}, y = {1}", Math.Round(x, 3), Math.Round(y = 0, 3));
         }
